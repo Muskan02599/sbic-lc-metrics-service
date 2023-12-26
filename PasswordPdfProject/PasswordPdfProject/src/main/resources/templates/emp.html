@@ -1,0 +1,18 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:th="https://thymeleaf.org">    
+
+  <div  th:if="${!empsList.empty}">
+       <table  border="1"  bgcolor="cyan"  align="center"> 
+                <tr bgcolor="pink">
+                   <th>eno </th> <th>ename </th> <th>desg</th> <th>salary </th> <th>deptNo </th>                </tr>
+                <tr  th:each="emp:${empsList}">
+                        <td><span th:text="${emp.empno}"/> </td>
+                        <td><span th:text="${emp.ename}"/>  </td>
+                        <td><span th:text="${emp.job}"/>  </td>
+                        <td><span th:text="${emp.sal}"/>  </td>
+                        <td><span th:text="${emp.deptno}"/>  </td>
+                    </tr>
+       </table>
+       </div>
+ <br>
+ <br>
