@@ -1,4 +1,4 @@
-package com.inno;
+package com.example.PasswordPdfProject.inno;
 
 public class Employee {
 	private Integer empno;
